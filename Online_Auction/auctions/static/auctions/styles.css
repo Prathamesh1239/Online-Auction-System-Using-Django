@@ -1,0 +1,334 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Body */
+body {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Title in Center */
+body .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.right-links,
+.left-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item a {
+    font-size: 1.3em;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #ffd700;
+}
+
+/* Home Container */
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: linear-gradient(180deg, #f8d3d3 0%, #fda085 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.Category-container,
+.listings-container {
+    padding: 20px;
+}
+
+/* Category */
+.category {
+    margin: 15px;
+}
+
+.category a {
+    color: #343a40;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.category a:hover {
+    color: #ff6b6b;
+}
+
+/* Listings Container */
+.listings-container ul {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.listings-container li {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 15px;
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.listings-container li .Image-container img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.listings-container li .Image-container img:hover {
+    transform: scale(1.05);
+}
+
+.listings-container li a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.listings-container li a h3 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Last Bid / Primary Price */
+.last-bid,
+.Primary-price {
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.last-bid {
+    background: linear-gradient(90deg, #f2d57e 0%, #ffae6d 100%);
+}
+
+.Primary-price {
+    background: linear-gradient(90deg, #d97855 0%, #ff6b6b 100%);
+}
+
+/* Listing Page */
+.listing-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Item Image and Title */
+.item-imageTitel {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item-imageTitel .item-img {
+    width: 50%;
+}
+
+.item-imageTitel .item-img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.item-imageTitel .item-titleBP {
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-imageTitel .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-imageTitel .title-container small {
+    font-size: 1em;
+}
+
+/* Bid Price / Price Page */
+.bid-page,
+.price-page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    font-size: 1.8em;
+    border-top: 1px solid #ccc;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Listing Page Forms, Place a Bid */
+.listing-page-form form {
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.submit {
+    color: #fff;
+    background: linear-gradient(90deg, #ff6b6b 0%, #ffae6d 100%);
+    border: 3px solid #ff6b6b;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: linear-gradient(90deg, #ffae6d 0%, #ff6b6b 100%);
+    color: #fff;
+}
+
+/* Box Message */
+.boxMessage {
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.boxMessage p {
+    color: #343a40;
+    text-align: center;
+}
+
+.boxMessage p a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+/* Bidders */
+.item-bidder {
+    margin-left: 10px;
+}
+
+.item-bidder .bid {
+    margin-left: 15px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff6b6b 0%, #ffae6d 100%);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Notifications Control */
+.has-unread {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.has-unread .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    color: #fff;
+}
+
+/* Comment */
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.comment form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.comment form .submit {
+    color: #fff;
+    background: linear-gradient(90deg, #ff6b6b 0%, #ffae6d 100%);
+    border: 3px solid #ff6b6b;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comment form .submit:hover {
+    background: linear-gradient(90deg, #ffae6d 0%, #ff6b6b 100%);
+    color: #fff;
+}
